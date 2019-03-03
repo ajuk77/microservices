@@ -6,8 +6,6 @@ HELP.md
 .apt_generated
 .classpath
 .factorypath
-.project
-.settings
 .springBeans
 .sts4-cache
 
@@ -24,3 +22,8 @@ HELP.md
 /nbdist/
 /.nb-gradle/
 /build/
+
+/target/
+.project
+.classpath
+.settings/
