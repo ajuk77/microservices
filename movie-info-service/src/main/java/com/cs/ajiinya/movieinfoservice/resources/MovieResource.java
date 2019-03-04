@@ -1,7 +1,6 @@
 package com.cs.ajiinya.movieinfoservice.resources;
 
-import javax.websocket.server.PathParam;
-
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +11,8 @@ import com.cs.ajiinya.movieinfoservice.models.Movie;
 public class MovieResource {
 
 	@RequestMapping("/{movieId}")
-	public Movie getMovieInfo(@PathParam("movieId") String movieId) {
+	public Movie getMovieInfo(@PathVariable("movieId") String movieId) {
+	
 		return new Movie(movieId, "Test Name");
 	}
 
